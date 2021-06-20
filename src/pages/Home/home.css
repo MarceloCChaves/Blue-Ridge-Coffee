@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+header{
+    height: 100px;
+    background: #F3EED9;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: helvetica;
+    letter-spacing: 5px;
+}
+.logo img{
+    width: 30%;
+    max-width: 100%;
+    height: 20%;
+}
+nav{
+    float: right;
+    line-height: 100px;
+    position: fixed;
+    right: 50px;
+}
+nav a{
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #714100;
+    margin-left: 32px;
+    transition: 0.5s linear;
+    max-width: 100%;
+}
+nav a:hover{
+    font-size: 21px;
+}
+.banner-area{
+    width: 100%;
+    max-width: 100%;
+    height: 80vh;
+    position: fixed;
+    top: 100px;
+    background: url(../../assets/img/coffee-break.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+.banner-area p{
+    padding: 4%;
+    font-family: helvetica;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 2px #111111;
+    text-align: center;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 650px;
+    height: 1500px;
+    background: #222;
+}
+.content-area h2{
+    font-family: helvetica;
+    padding-top: 30px;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+}
+.content-area p{
+    font-family: helvetica;
+    padding-top: 30px;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+.img-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-content img{
+    width: 50%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        right: 0;
+    }
+    nav a{
+        line-height: 120px;
+        font-size: 16px;
+    }
+    .banner-area{
+        height: 100vh;
+    }
+    .banner-area h2{
+        font-size: 40px;
+    }
+    .img-content img{
+        width: 90%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+}
